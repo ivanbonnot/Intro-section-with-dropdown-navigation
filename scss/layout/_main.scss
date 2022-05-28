@@ -6,17 +6,49 @@ section {
     grid-template-rows: 1fr;
     grid-template-areas:
         "left hero ";
-    align-items: center;
-    justify-content: center;
+    // align-items: center;
+    // justify-content: center;
     justify-items: end;
 
     .left {
         grid-area: left;
         margin-left: 40px;
-        
+
         h1 {
             font-size: 8rem;
-            font-size: 900;
+            font-weight: 700;
+            width: 90%;
+            line-height: 80px;
+            margin-top: 50px;
+        }
+
+        p {
+            margin-top: 50px;
+            font-weight: 700;
+            width: 80%;
+            color: hsl(0, 0%, 41%);
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 10px 25px;
+            color: hsl(0, 0%, 90%);
+            background-color:  hsl(0, 0%, 8%);
+            border-radius: 15px;
+            font-weight: 700;
+
+            &:hover {
+                background-color: white;
+                color: black;
+            }
+        }
+
+        div {
+            margin-top: 50px;
+
+            img {
+                margin-left: 25px;
+            }
         }
     }
 

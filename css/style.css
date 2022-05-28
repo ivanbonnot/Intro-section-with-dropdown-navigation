@@ -15,7 +15,7 @@ body {
 header {
   position: fixed; }
   header nav {
-    background-color: #e6e6e6;
+    background-color: #fafafa;
     width: 100vw;
     height: 80px;
     padding: 10px;
@@ -41,15 +41,14 @@ header {
           border-radius: 15px;
           border: 1px solid #141414; }
         header nav ul li a {
-          color: #141414;
+          color: dimgray;
           font-weight: 500;
           padding: 10px;
           text-decoration: none;
           transition: ease-in-out 0.3s; }
           header nav ul li a:hover {
             cursor: pointer;
-            color: black;
-            font-weight: 600; }
+            color: black; }
       header nav ul .start {
         grid-area: init; }
       header nav ul .end {
@@ -61,15 +60,35 @@ section {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "left hero ";
-  align-items: center;
-  justify-content: center;
   justify-items: end; }
   section .left {
     grid-area: left;
     margin-left: 40px; }
     section .left h1 {
       font-size: 8rem;
-      font-size: 900; }
+      font-weight: 700;
+      width: 90%;
+      line-height: 80px;
+      margin-top: 50px; }
+    section .left p {
+      margin-top: 50px;
+      font-weight: 700;
+      width: 80%;
+      color: dimgray; }
+    section .left button {
+      margin-top: 30px;
+      padding: 10px 25px;
+      color: #e6e6e6;
+      background-color: #141414;
+      border-radius: 15px;
+      font-weight: 700; }
+      section .left button:hover {
+        background-color: white;
+        color: black; }
+    section .left div {
+      margin-top: 50px; }
+      section .left div img {
+        margin-left: 25px; }
   section .hero {
     grid-area: hero; }
     section .hero img {
