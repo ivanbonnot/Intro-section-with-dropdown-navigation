@@ -9,4 +9,23 @@ html {
 
 body {
   font-family: 'Epilogue';
+  font-size: 1.8rem;
   overflow-x: hidden; }
+
+header {
+  position: fixed; }
+  header nav {
+    background-color: #fafafa;
+    width: 100vw; }
+    header nav ul {
+      display: flex;
+      flex-direction: row;
+      list-style-type: none; }
+    header nav li a {
+      text-decoration: none; }
+    header nav li .first {
+      display: flex;
+      justify-content: flex-start; }
+    header nav li .second {
+      display: flex;
+      justify-content: flex-end; }
