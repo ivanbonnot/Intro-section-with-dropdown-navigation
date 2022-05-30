@@ -1,36 +1,79 @@
 body {
-    font-family: 'Epilogue';
-    font-size: 1.8rem;
+    font-family: 'Epilogue', sans-serif;
     overflow-x: hidden;
+    font-size: 1.8rem;
 }
 
 header {
     position: fixed;
 
-      nav {
+    nav {
         background-color: hsl(0, 0%, 98%);
         width: 100vw;
-  
+        height: 80px;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 120px 1fr 0.15fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "img init ending";
+        align-items: center;
+        justify-items: flex-start;
+
+        .logo {
+            grid-area: img;
+            width: 100px;
+            height: 25px;
+            padding-left: 20px;
+        }
+
         ul {
-          display: flex;
-          flex-direction: row;
-          list-style-type: none;
-        }
-
-        li a {
-            text-decoration: none;
-            
-        }
-
-        li .first {
+            list-style-type: none;
             display: flex;
-            justify-content: flex-start;
-        }
+            flex-direction: row;
 
-        li .second {
-            display: flex;
-            justify-content: flex-end;
+            li {
+                padding: 0 30px 0 0;
+
+                .register {
+                    padding: 10px 22px 10px 22px;
+                    border-radius: 15px;
+                    border: 1px solid hsl(0, 0%, 41%);;
+                }
+
+                a {
+                    color: hsl(0, 0%, 41%);
+                    font-weight: 500;
+                    padding: 10px;
+                    text-decoration: none;
+                    transition: ease-in-out 0.3s;
+
+                    &:hover {
+                        cursor: pointer;
+                        color: black;
+                    }
+                }
+
+                .features-menu {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    flex-direction: column;
+                    height: 150px;
+                    width: 170px;
+                    background-color: white;
+                    border: 1px solid black;
+                    border-radius: 8px;
+                    box-shadow: 3px 3px 0px 0px #00000060;
+                }
+            }
+
+            .start {
+                grid-area: init;
+            }
+
+            .end {
+                grid-area: ending;
+            }
         }
-      }
     }
-  
+}
