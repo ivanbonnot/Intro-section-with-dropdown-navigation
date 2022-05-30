@@ -38,7 +38,7 @@ header {
                 .register {
                     padding: 10px 22px 10px 22px;
                     border-radius: 15px;
-                    border: 1px solid hsl(0, 0%, 8%);
+                    border: 1px solid hsl(0, 0%, 41%);;
                 }
 
                 a {
@@ -52,6 +52,18 @@ header {
                         cursor: pointer;
                         color: black;
                     }
+                }
+
+                .features-menu {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    flex-direction: column;
+                    height: 150px;
+                    width: 170px;
+                    background-color: white;
+                    border: 1px solid black;
+                    border-radius: 8px;
+                    box-shadow: 3px 3px 0px 0px #00000060;
                 }
             }
 

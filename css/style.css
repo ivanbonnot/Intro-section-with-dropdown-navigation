@@ -39,7 +39,7 @@ header {
         header nav ul li .register {
           padding: 10px 22px 10px 22px;
           border-radius: 15px;
-          border: 1px solid #141414; }
+          border: 1px solid dimgray; }
         header nav ul li a {
           color: dimgray;
           font-weight: 500;
@@ -49,6 +49,16 @@ header {
           header nav ul li a:hover {
             cursor: pointer;
             color: black; }
+        header nav ul li .features-menu {
+          display: flex;
+          flex-wrap: nowrap;
+          flex-direction: column;
+          height: 150px;
+          width: 170px;
+          background-color: white;
+          border: 1px solid black;
+          border-radius: 8px;
+          box-shadow: 3px 3px 0px 0px #00000060; }
       header nav ul .start {
         grid-area: init; }
       header nav ul .end {
