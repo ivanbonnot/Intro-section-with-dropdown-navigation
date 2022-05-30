@@ -8,16 +8,17 @@ header {
     position: fixed;
 
     nav {
-        background-color: hsl(0, 0%, 98%);
+        background-color: hsl(0, 0%, 90%);
         width: 100vw;
         height: 80px;
         padding: 10px;
         display: grid;
-        grid-template-columns: 120px 1fr 0.15fr;
+        grid-template-columns: 140px 1fr 0.15fr;
         grid-template-rows: 1fr;
         grid-template-areas:
-            "img init ending";
-        align-items: center;
+            "img init ending"
+            "features company .";
+        align-items: flex-start;
         justify-items: flex-start;
 
         .logo {
@@ -25,9 +26,11 @@ header {
             width: 100px;
             height: 25px;
             padding-left: 20px;
+            margin-top: 15px;
         }
 
         ul {
+            margin-top: 15px;
             list-style-type: none;
             display: flex;
             flex-direction: row;
@@ -54,17 +57,6 @@ header {
                     }
                 }
 
-                .features-menu {
-                    display: flex;
-                    flex-wrap: nowrap;
-                    flex-direction: column;
-                    height: 150px;
-                    width: 170px;
-                    background-color: white;
-                    border: 1px solid black;
-                    border-radius: 8px;
-                    box-shadow: 3px 3px 0px 0px #00000060;
-                }
             }
 
             .start {
@@ -75,5 +67,47 @@ header {
                 grid-area: ending;
             }
         }
+
+        .features-menu {
+            // visibility: hidden;
+            grid-area: features;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            height: 160px;
+            width: 170px;
+            margin: 20px 85px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 7px 7px 7px 7px #0000001f;
+
+            li {
+                padding-bottom: 5px;
+            }
+        }
+
+        .company-menu {
+            // visibility: hidden;
+            grid-area: company;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            height: 140px;
+            width: 130px;
+            margin-top: 20px;
+            margin-left: 130px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 7px 7px 7px 7px #0000001f;
+
+            li {
+                padding-bottom: 5px;
+            }
+        }
     }
+
 }
