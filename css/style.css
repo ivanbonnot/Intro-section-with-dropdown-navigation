@@ -72,9 +72,6 @@ header {
       transition: ease-in-out 0.3s; }
       header nav .features-menu li {
         padding-bottom: 5px; }
-    header nav .active {
-      visibility: visible;
-      transition: ease-in-out 0.3s; }
     header nav .company-menu {
       grid-area: company;
       visibility: hidden;
@@ -93,9 +90,6 @@ header {
       transition: ease-in-out 0.3s; }
       header nav .company-menu li {
         padding-bottom: 5px; }
-    header nav .active {
-      visibility: visible;
-      transition: ease-in-out 0.3s; }
 
 section {
   padding: 100px;
@@ -134,7 +128,119 @@ section {
       section .left div img {
         margin-left: 25px; }
   section .hero {
-    grid-area: hero; }
-    section .hero img {
-      width: 100%;
-      height: 80vh; }
+    grid-area: hero;
+    background-image: url(../images/image-hero-desktop.png);
+    margin-left: 50px;
+    width: 63.5%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+@media screen and (max-width: 375px) {
+  header {
+    position: absolute; }
+    header nav {
+      background-color: #fafafa;
+      width: 100vw;
+      height: 70px;
+      padding: 10px;
+      display: grid;
+      grid-template-columns: 140px 1fr 0.15fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "img init ending" "features company .";
+      align-items: flex-start;
+      justify-items: flex-start; }
+      header nav .logo {
+        grid-area: img;
+        width: 100px;
+        height: 25px;
+        padding-left: 20px;
+        margin-top: 15px; }
+      header nav ul {
+        margin-top: 15px;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row; }
+        header nav ul li {
+          padding: 0 30px 0 0; }
+          header nav ul li .register {
+            padding: 10px 22px 10px 22px;
+            border-radius: 15px;
+            border: 1px solid dimgray; }
+          header nav ul li a {
+            color: dimgray;
+            font-weight: 500;
+            padding: 10px;
+            text-decoration: none;
+            transition: ease-in-out 0.3s; }
+            header nav ul li a:hover {
+              cursor: pointer;
+              color: black; }
+        header nav ul .start {
+          grid-area: init; }
+        header nav ul .end {
+          grid-area: ending; }
+      header nav .features-menu {
+        grid-area: features;
+        visibility: hidden;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 160px;
+        width: 170px;
+        margin: 10px 85px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 7px 7px 7px 7px #00000031;
+        transition: ease-in-out 0.3s; }
+        header nav .features-menu li {
+          padding-bottom: 5px; }
+      header nav .company-menu {
+        grid-area: company;
+        visibility: hidden;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 140px;
+        width: 130px;
+        margin-top: 10px;
+        margin-left: 160px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 7px 7px 7px 7px #00000031;
+        transition: ease-in-out 0.3s; }
+        header nav .company-menu li {
+          padding-bottom: 5px; }
+  section {
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "hero" "left";
+    align-items: center;
+    justify-content: center;
+    justify-items: center; }
+    section .left {
+      margin-left: 0px; }
+      section .left h1 {
+        font-size: 8rem;
+        font-weight: 700;
+        width: 90%;
+        line-height: 80px;
+        margin-top: 50px; }
+      section .left p {
+        font-weight: 700;
+        width: 80%;
+        color: dimgray; }
+      section .left div img {
+        margin-left: 25px; }
+    section .hero {
+      grid-area: hero; }
+      section .hero img {
+        width: 100%;
+        height: 100vh; } }

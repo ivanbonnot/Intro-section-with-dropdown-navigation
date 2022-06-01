@@ -89,11 +89,6 @@ header {
             }
         }
 
-        .active {
-            visibility: visible;
-            transition: ease-in-out 0.3s;
-        }
-
         .company-menu {
             grid-area: company;
             visibility: hidden;
@@ -115,12 +110,6 @@ header {
                 padding-bottom: 5px;
             }
         }
-
-        .active {
-            visibility: visible;
-            transition: ease-in-out 0.3s;
-        }
-
     }
 
 }
