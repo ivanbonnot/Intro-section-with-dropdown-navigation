@@ -5,12 +5,12 @@ body {
 }
 
 header {
-    position: fixed;
+    position: absolute;
 
     nav {
-        background-color: hsl(0, 0%, 90%);
+        background-color: hsl(0, 0%, 98%);
         width: 100vw;
-        height: 80px;
+        height: 70px;
         padding: 10px;
         display: grid;
         grid-template-columns: 140px 1fr 0.15fr;
@@ -69,8 +69,8 @@ header {
         }
 
         .features-menu {
-            // visibility: hidden;
             grid-area: features;
+            visibility: hidden;
             display: flex;
             flex-wrap: nowrap;
             flex-direction: column;
@@ -78,19 +78,25 @@ header {
             align-items: flex-start;
             height: 160px;
             width: 170px;
-            margin: 20px 85px;
+            margin: 10px 85px;
             background-color: white;
             border-radius: 8px;
-            box-shadow: 7px 7px 7px 7px #0000001f;
+            box-shadow: 7px 7px 7px 7px #00000031;
+            transition: ease-in-out 0.3s;
 
             li {
                 padding-bottom: 5px;
             }
         }
 
+        .active {
+            visibility: visible;
+            transition: ease-in-out 0.3s;
+        }
+
         .company-menu {
-            // visibility: hidden;
             grid-area: company;
+            visibility: hidden;
             display: flex;
             flex-wrap: nowrap;
             flex-direction: column;
@@ -98,16 +104,23 @@ header {
             align-items: flex-start;
             height: 140px;
             width: 130px;
-            margin-top: 20px;
-            margin-left: 130px;
+            margin-top: 10px;
+            margin-left: 160px;
             background-color: white;
             border-radius: 8px;
-            box-shadow: 7px 7px 7px 7px #0000001f;
+            box-shadow: 7px 7px 7px 7px #00000031;
+            transition: ease-in-out 0.3s;
 
             li {
                 padding-bottom: 5px;
             }
         }
+
+        .active {
+            visibility: visible;
+            transition: ease-in-out 0.3s;
+        }
+
     }
 
 }

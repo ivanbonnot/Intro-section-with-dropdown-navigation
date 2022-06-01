@@ -13,11 +13,11 @@ body {
   font-size: 1.8rem; }
 
 header {
-  position: fixed; }
+  position: absolute; }
   header nav {
-    background-color: #e6e6e6;
+    background-color: #fafafa;
     width: 100vw;
-    height: 80px;
+    height: 70px;
     padding: 10px;
     display: grid;
     grid-template-columns: 140px 1fr 0.15fr;
@@ -57,6 +57,7 @@ header {
         grid-area: ending; }
     header nav .features-menu {
       grid-area: features;
+      visibility: hidden;
       display: flex;
       flex-wrap: nowrap;
       flex-direction: column;
@@ -64,14 +65,19 @@ header {
       align-items: flex-start;
       height: 160px;
       width: 170px;
-      margin: 20px 85px;
+      margin: 10px 85px;
       background-color: white;
       border-radius: 8px;
-      box-shadow: 7px 7px 7px 7px #0000001f; }
+      box-shadow: 7px 7px 7px 7px #00000031;
+      transition: ease-in-out 0.3s; }
       header nav .features-menu li {
         padding-bottom: 5px; }
+    header nav .active {
+      visibility: visible;
+      transition: ease-in-out 0.3s; }
     header nav .company-menu {
       grid-area: company;
+      visibility: hidden;
       display: flex;
       flex-wrap: nowrap;
       flex-direction: column;
@@ -79,13 +85,17 @@ header {
       align-items: flex-start;
       height: 140px;
       width: 130px;
-      margin-top: 20px;
-      margin-left: 130px;
+      margin-top: 10px;
+      margin-left: 160px;
       background-color: white;
       border-radius: 8px;
-      box-shadow: 7px 7px 7px 7px #0000001f; }
+      box-shadow: 7px 7px 7px 7px #00000031;
+      transition: ease-in-out 0.3s; }
       header nav .company-menu li {
         padding-bottom: 5px; }
+    header nav .active {
+      visibility: visible;
+      transition: ease-in-out 0.3s; }
 
 section {
   padding: 100px;
@@ -114,7 +124,8 @@ section {
       color: #e6e6e6;
       background-color: #141414;
       border-radius: 15px;
-      font-weight: 700; }
+      font-weight: 700;
+      transition: ease-in-out 0.3s; }
       section .left button:hover {
         background-color: white;
         color: black; }
