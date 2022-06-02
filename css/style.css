@@ -131,11 +131,11 @@ section {
     grid-area: hero;
     background-image: url(../images/image-hero-desktop.png);
     margin-left: 50px;
-    width: 63.5%;
+    width: 100%;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; }
+    background-size: contain; }
 
 @media screen and (max-width: 375px) {
   header {
@@ -218,15 +218,12 @@ section {
           padding-bottom: 5px; }
   section {
     padding: 0px;
-    display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
     grid-template-areas: "hero" "left";
-    align-items: center;
-    justify-content: center;
-    justify-items: center; }
+    align-items: flex-start; }
     section .left {
-      margin-left: 0px; }
+      margin: 0px 0px; }
       section .left h1 {
         font-size: 8rem;
         font-weight: 700;
@@ -240,7 +237,7 @@ section {
       section .left div img {
         margin-left: 25px; }
     section .hero {
-      grid-area: hero; }
-      section .hero img {
-        width: 100%;
-        height: 100vh; } }
+      grid-area: hero;
+      background-image: url(../images/image-hero-mobile.png);
+      margin: 80px 0px;
+      height: 50vh; } }
