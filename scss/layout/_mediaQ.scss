@@ -1,19 +1,20 @@
 @media screen and (max-width: 375px) {
 
     header {
-    
+        position: relative;
+
         nav {
             width: 100vw;
             height: 50px;
             padding: 0px;
-            grid-template-columns: 140px 1fr;
-            grid-template-rows: 1fr;
+            grid-template-columns: 100px 275px;
+            grid-template-rows: 50px 300px;
             grid-template-areas:
-                "img . ."
-                "init ending"
-                "features company .";
+                "img menu"
+                ". init"
+                ". ending";
             align-items: flex-start;
-            justify-items: flex-start;
+            justify-items: flex-end;
     
             .logo {
                 grid-area: img;
@@ -24,7 +25,7 @@
             }
     
             ul {
-                visibility: hidden;
+                visibility: visible;
                 margin-top: 15px;
                 list-style-type: none;
                 display: flex;
@@ -32,26 +33,6 @@
     
                 li {
                     padding: 0 30px 0 0;
-    
-                    .register {
-                        padding: 10px 22px 10px 22px;
-                        border-radius: 15px;
-                        border: 1px solid hsl(0, 0%, 41%);;
-                    }
-    
-                    a {
-                        color: hsl(0, 0%, 41%);
-                        font-weight: 500;
-                        padding: 10px;
-                        text-decoration: none;
-                        transition: ease-in-out 0.3s;
-    
-                        &:hover {
-                            cursor: pointer;
-                            color: black;
-                        }
-                    }
-    
                 }
     
                 .start {
@@ -62,48 +43,12 @@
                     grid-area: ending;
                 }
             }
-    
-            .features-menu {
-                grid-area: features;
+
+            .active-menu {
                 visibility: hidden;
-                display: flex;
-                flex-wrap: nowrap;
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-start;
-                height: 160px;
-                width: 170px;
-                margin: 10px 85px;
-                background-color: white;
-                border-radius: 8px;
-                box-shadow: 7px 7px 7px 7px #00000031;
-                transition: ease-in-out 0.3s;
-    
-                li {
-                    padding-bottom: 5px;
-                }
-            }
-    
-            .company-menu {
-                grid-area: company;
-                visibility: hidden;
-                display: flex;
-                flex-wrap: nowrap;
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-start;
-                height: 140px;
-                width: 130px;
-                margin-top: 10px;
-                margin-left: 160px;
-                background-color: white;
-                border-radius: 8px;
-                box-shadow: 7px 7px 7px 7px #00000031;
-                transition: ease-in-out 0.3s;
-    
-                li {
-                    padding-bottom: 5px;
-                }
+                cursor: pointer;
+                grid-area: menu;
+                margin: 10px 20px 0px 0px;
             }
         }
     
@@ -126,12 +71,12 @@
             h1 {
                 font-size: 3.5rem;
                 width: 100%;
-                margin-top: 5px;
+                margin-top: 10px;
 
             }
     
             p {
-                margin-top: 5px;
+                margin-top: 7px;
                 font-weight: 700;
                 width: 100%;
                 color: hsl(0, 0%, 41%);
@@ -139,7 +84,7 @@
             }
             
             button {
-                margin-top: 15px;
+                margin-top: 10px;
             }
     
             div {
@@ -155,7 +100,7 @@
         .hero {
             grid-area: hero;
             background-image: url(../images/image-hero-mobile.png);
-            margin: 55px 0px 0px 0px;
+            margin: 60px 0px 0px 0px;
             height: 50vh;
         }
     }

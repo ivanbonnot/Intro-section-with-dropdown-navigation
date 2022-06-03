@@ -139,81 +139,40 @@ section {
     background-size: contain; }
 
 @media screen and (max-width: 375px) {
-  header nav {
-    width: 100vw;
-    height: 50px;
-    padding: 0px;
-    grid-template-columns: 140px 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "img . ." "init ending" "features company .";
-    align-items: flex-start;
-    justify-items: flex-start; }
-    header nav .logo {
-      grid-area: img;
-      width: 100px;
-      height: 25px;
-      padding-left: 20px;
-      margin-top: 15px; }
-    header nav ul {
-      visibility: hidden;
-      margin-top: 15px;
-      list-style-type: none;
-      display: flex;
-      flex-direction: column; }
-      header nav ul li {
-        padding: 0 30px 0 0; }
-        header nav ul li .register {
-          padding: 10px 22px 10px 22px;
-          border-radius: 15px;
-          border: 1px solid dimgray; }
-        header nav ul li a {
-          color: dimgray;
-          font-weight: 500;
-          padding: 10px;
-          text-decoration: none;
-          transition: ease-in-out 0.3s; }
-          header nav ul li a:hover {
-            cursor: pointer;
-            color: black; }
-      header nav ul .start {
-        grid-area: init; }
-      header nav ul .end {
-        grid-area: ending; }
-    header nav .features-menu {
-      grid-area: features;
-      visibility: hidden;
-      display: flex;
-      flex-wrap: nowrap;
-      flex-direction: column;
-      justify-content: center;
+  header {
+    position: relative; }
+    header nav {
+      width: 100vw;
+      height: 50px;
+      padding: 0px;
+      grid-template-columns: 100px 275px;
+      grid-template-rows: 50px 300px;
+      grid-template-areas: "img menu" ". init" ". ending";
       align-items: flex-start;
-      height: 160px;
-      width: 170px;
-      margin: 10px 85px;
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 7px 7px 7px 7px #00000031;
-      transition: ease-in-out 0.3s; }
-      header nav .features-menu li {
-        padding-bottom: 5px; }
-    header nav .company-menu {
-      grid-area: company;
-      visibility: hidden;
-      display: flex;
-      flex-wrap: nowrap;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      height: 140px;
-      width: 130px;
-      margin-top: 10px;
-      margin-left: 160px;
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 7px 7px 7px 7px #00000031;
-      transition: ease-in-out 0.3s; }
-      header nav .company-menu li {
-        padding-bottom: 5px; }
+      justify-items: flex-end; }
+      header nav .logo {
+        grid-area: img;
+        width: 100px;
+        height: 25px;
+        padding-left: 20px;
+        margin-top: 15px; }
+      header nav ul {
+        visibility: visible;
+        margin-top: 15px;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column; }
+        header nav ul li {
+          padding: 0 30px 0 0; }
+        header nav ul .start {
+          grid-area: init; }
+        header nav ul .end {
+          grid-area: ending; }
+      header nav .active-menu {
+        visibility: hidden;
+        cursor: pointer;
+        grid-area: menu;
+        margin: 10px 20px 0px 0px; }
   section {
     padding: 0px;
     grid-template-columns: 1fr;
@@ -226,15 +185,15 @@ section {
       section .left h1 {
         font-size: 3.5rem;
         width: 100%;
-        margin-top: 5px; }
+        margin-top: 10px; }
       section .left p {
-        margin-top: 5px;
+        margin-top: 7px;
         font-weight: 700;
         width: 100%;
         color: dimgray;
         line-height: 25px; }
       section .left button {
-        margin-top: 15px; }
+        margin-top: 10px; }
       section .left div {
         margin-top: 35px; }
         section .left div img {
@@ -243,5 +202,5 @@ section {
     section .hero {
       grid-area: hero;
       background-image: url(../images/image-hero-mobile.png);
-      margin: 55px 0px 0px 0px;
+      margin: 60px 0px 0px 0px;
       height: 50vh; } }
