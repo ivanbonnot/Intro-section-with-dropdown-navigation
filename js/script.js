@@ -3,6 +3,11 @@ const company =  document.querySelector(".company");
 const featuresMenu = document.querySelector(".features-menu");
 const companyMenu = document.querySelector(".company-menu");
 
+let mediaqueryList = window.matchMedia("(max-width: 375px)");
+
+if(mediaqueryList.matches) {
+    alert('La media query se cumple');
+  }
 
 features.addEventListener('mouseenter', ()=> {featuresMenu.style.visibility = 'visible'})
 features.addEventListener('mouseleave', ()=> {featuresMenu.style.visibility = 'hidden'})
