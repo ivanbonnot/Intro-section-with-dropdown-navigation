@@ -11,7 +11,7 @@ header {
     nav {
         background-color: hsl(0, 0%, 98%);
         width: 100vw;
-        height: 100vh;
+        height: 70px;
         padding: 10px;
         display: grid;
         grid-template-columns: 140px 1fr 0.15fr;
@@ -67,6 +67,10 @@ header {
             .end {
                 grid-area: ending;
             }
+        }
+
+        .active-menu {
+            visibility: hidden;
         }
 
         .features-menu {

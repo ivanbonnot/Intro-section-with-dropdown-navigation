@@ -18,7 +18,7 @@ header {
   header nav {
     background-color: #fafafa;
     width: 100vw;
-    height: 100vh;
+    height: 70px;
     padding: 10px;
     display: grid;
     grid-template-columns: 140px 1fr 0.15fr;
@@ -56,6 +56,8 @@ header {
         grid-area: init; }
       header nav ul .end {
         grid-area: ending; }
+    header nav .active-menu {
+      visibility: hidden; }
     header nav .features-menu {
       grid-area: features;
       visibility: hidden;
@@ -169,7 +171,7 @@ section {
         header nav ul .end {
           grid-area: ending; }
       header nav .active-menu {
-        visibility: hidden;
+        visibility: visible;
         cursor: pointer;
         grid-area: menu;
         margin: 10px 20px 0px 0px; }
