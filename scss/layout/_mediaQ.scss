@@ -8,11 +8,13 @@
             height: 50px;
             padding: 0px;
             grid-template-columns: 100px 275px;
-            grid-template-rows: 50px 300px;
+            grid-template-rows: 50% 50%;
             grid-template-areas:
                 "img menu"
                 ". init"
-                ". ending";
+                ". features"
+                ". ending"
+                ". company";
             align-items: flex-start;
             justify-items: flex-end;
     
@@ -45,7 +47,7 @@
             }
 
             .active-menu {
-                visibility: hidden;
+                visibility: visible;
                 cursor: pointer;
                 grid-area: menu;
                 margin: 10px 20px 0px 0px;
@@ -54,7 +56,6 @@
     
     }
 
-    
     section {
         padding: 0px;
         grid-template-columns: 1fr;
@@ -72,7 +73,6 @@
                 font-size: 3.5rem;
                 width: 100%;
                 margin-top: 10px;
-
             }
     
             p {
@@ -100,7 +100,7 @@
         .hero {
             grid-area: hero;
             background-image: url(../images/image-hero-mobile.png);
-            margin: 60px 0px 0px 0px;
+            margin: 20px 0px 0px 0px;
             height: 50vh;
         }
     }

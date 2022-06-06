@@ -18,7 +18,7 @@ header {
   header nav {
     background-color: #fafafa;
     width: 100vw;
-    height: 100vh;
+    height: 60px;
     padding: 10px;
     display: grid;
     grid-template-columns: 140px 1fr 0.15fr;
@@ -56,6 +56,8 @@ header {
         grid-area: init; }
       header nav ul .end {
         grid-area: ending; }
+    header nav .active-menu {
+      visibility: hidden; }
     header nav .features-menu {
       grid-area: features;
       visibility: hidden;
@@ -146,8 +148,8 @@ section {
       height: 50px;
       padding: 0px;
       grid-template-columns: 100px 275px;
-      grid-template-rows: 50px 300px;
-      grid-template-areas: "img menu" ". init" ". ending";
+      grid-template-rows: 50% 50%;
+      grid-template-areas: "img menu" ". init" ". features" ". ending" ". company";
       align-items: flex-start;
       justify-items: flex-end; }
       header nav .logo {
@@ -169,7 +171,7 @@ section {
         header nav ul .end {
           grid-area: ending; }
       header nav .active-menu {
-        visibility: hidden;
+        visibility: visible;
         cursor: pointer;
         grid-area: menu;
         margin: 10px 20px 0px 0px; }
@@ -202,5 +204,5 @@ section {
     section .hero {
       grid-area: hero;
       background-image: url(../images/image-hero-mobile.png);
-      margin: 60px 0px 0px 0px;
+      margin: 20px 0px 0px 0px;
       height: 50vh; } }
