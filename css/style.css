@@ -52,10 +52,10 @@ header {
           header nav ul li a:hover {
             cursor: pointer;
             color: black; }
-      header nav ul .start {
-        grid-area: init; }
-      header nav ul .end {
-        grid-area: ending; }
+    header nav .start {
+      grid-area: init; }
+    header nav .end {
+      grid-area: ending; }
     header nav .active-menu {
       visibility: hidden; }
     header nav .features-menu {
@@ -148,7 +148,7 @@ section {
       height: 50px;
       padding: 0px;
       grid-template-columns: 100px 275px;
-      grid-template-rows: 50% 50%;
+      grid-template-rows: 50px 80px 120px 50px 50px;
       grid-template-areas: "img menu" ". init" ". features" ". ending" ". company";
       align-items: flex-start;
       justify-items: flex-end; }
@@ -160,21 +160,43 @@ section {
         margin-top: 15px; }
       header nav ul {
         visibility: visible;
+        width: 65vw;
+        height: 100vh;
+        background-color: white;
         margin-top: 15px;
         list-style-type: none;
         display: flex;
         flex-direction: column; }
         header nav ul li {
           padding: 0 30px 0 0; }
-        header nav ul .start {
-          grid-area: init; }
-        header nav ul .end {
-          grid-area: ending; }
+      header nav .end {
+        align-items: center; }
+        header nav .end li {
+          margin-bottom: 15px; }
+          header nav .end li .register {
+            padding: 10px 60px 10px 60px; }
       header nav .active-menu {
-        visibility: visible;
         cursor: pointer;
         grid-area: menu;
         margin: 10px 20px 0px 0px; }
+        header nav .active-menu .menu {
+          visibility: visible; }
+        header nav .active-menu .close {
+          visibility: hidden; }
+      header nav .features-menu {
+        margin: -35px 65px;
+        border-radius: unset;
+        box-shadow: unset; }
+        header nav .features-menu li {
+          padding-bottom: 5px; }
+      header nav .company-menu {
+        margin-top: -180px;
+        margin-right: 90px;
+        background-color: white;
+        border-radius: unset;
+        box-shadow: unset; }
+        header nav .company-menu li {
+          padding-bottom: 5px; }
   section {
     padding: 0px;
     grid-template-columns: 1fr;

@@ -3,6 +3,8 @@ const company =  document.querySelector(".company");
 const featuresMenu = document.querySelector(".features-menu");
 const companyMenu = document.querySelector(".company-menu");
 
+
+
 let mediaqueryList = window.matchMedia("(max-width: 375px)");
 
 if(mediaqueryList.matches) {

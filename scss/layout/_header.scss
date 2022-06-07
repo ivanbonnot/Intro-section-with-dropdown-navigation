@@ -60,13 +60,15 @@ header {
 
             }
 
-            .start {
-                grid-area: init;
-            }
+            
+        }
 
-            .end {
-                grid-area: ending;
-            }
+        .start {
+            grid-area: init;
+        }
+
+        .end {
+            grid-area: ending;
         }
 
         .active-menu {
@@ -75,7 +77,7 @@ header {
 
         .features-menu {
             grid-area: features;
-            visibility: hidden;
+            visibility: hidden ;
             display: flex;
             flex-wrap: nowrap;
             flex-direction: column;
