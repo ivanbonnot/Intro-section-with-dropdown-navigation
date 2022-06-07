@@ -1,7 +1,9 @@
 const features = document.querySelector(".features");
 const company =  document.querySelector(".company");
-const featuresMenu = document.querySelector(".features-menu");
-const companyMenu = document.querySelector(".company-menu");
+const featuresMenu = document.querySelector(".features-submenu");
+const companyMenu = document.querySelector(".company-submenu");
+
+
 
 let mediaqueryList = window.matchMedia("(max-width: 375px)");
 

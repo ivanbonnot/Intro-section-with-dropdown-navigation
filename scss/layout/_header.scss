@@ -17,8 +17,7 @@ header {
         grid-template-columns: 140px 1fr 0.15fr;
         grid-template-rows: 1fr;
         grid-template-areas:
-            "img init ending"
-            "features company .";
+            "img init ending";
         align-items: flex-start;
         justify-items: flex-start;
 
@@ -26,7 +25,7 @@ header {
             grid-area: img;
             width: 100px;
             height: 25px;
-            padding-left: 20px;
+            padding-left: 10px;
             margin-top: 15px;
         }
 
@@ -37,7 +36,7 @@ header {
             flex-direction: row;
 
             li {
-                padding: 0 30px 0 0;
+                padding: 0 15px 0 0;
 
                 .register {
                     padding: 10px 22px 10px 22px;
@@ -48,7 +47,7 @@ header {
                 a {
                     color: hsl(0, 0%, 41%);
                     font-weight: 500;
-                    padding: 10px;
+                    padding-left: 30px;
                     text-decoration: none;
                     transition: ease-in-out 0.3s;
 
@@ -57,64 +56,79 @@ header {
                         color: black;
                     }
                 }
-
             }
 
-            .start {
-                grid-area: init;
+            .features-menu {
+                display: flex;
+                flex-direction: column;
+                padding-right: 30px;
             }
 
-            .end {
-                grid-area: ending;
+            .features-submenu {
+                grid-area: features;
+                visibility: hidden ;
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                height: 160px;
+                width: 170px;
+                margin: 15px 0px 0px -55px;
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 7px 7px 7px 7px #00000031;
+                transition: ease-in-out 0.3s;
+    
+                li {
+                    padding-bottom: 5px;
+                }
             }
+
+            .company-menu {
+                display: flex;
+                flex-direction: column;
+
+                .company-submenu {
+                    grid-area: company;
+                    visibility: hidden;
+                    display: flex;
+                    flex-wrap: nowrap;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    height: 140px;
+                    width: 130px;
+                    margin: 15px 0px 0px 30px;
+                    background-color: white;
+                    border-radius: 8px;
+                    box-shadow: 7px 7px 7px 7px #00000031;
+                    transition: ease-in-out 0.3s;
+        
+                    li {
+                        padding-bottom: 5px;
+                    }
+                }
+            }
+
+            
+        }
+
+        .start {
+            grid-area: init;
+        }
+
+        .end {
+            grid-area: ending;
         }
 
         .active-menu {
             visibility: hidden;
         }
 
-        .features-menu {
-            grid-area: features;
-            visibility: hidden;
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            height: 160px;
-            width: 170px;
-            margin: 10px 85px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 7px 7px 7px 7px #00000031;
-            transition: ease-in-out 0.3s;
+        
 
-            li {
-                padding-bottom: 5px;
-            }
-        }
-
-        .company-menu {
-            grid-area: company;
-            visibility: hidden;
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            height: 140px;
-            width: 130px;
-            margin-top: 10px;
-            margin-left: 160px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 7px 7px 7px 7px #00000031;
-            transition: ease-in-out 0.3s;
-
-            li {
-                padding-bottom: 5px;
-            }
-        }
+        
     }
 
 }

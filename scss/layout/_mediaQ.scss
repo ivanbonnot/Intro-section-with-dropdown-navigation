@@ -8,7 +8,7 @@
             height: 100vh;
             padding: 0px;
             grid-template-columns: 100px 275px;
-            grid-template-rows: 1fr 1fr 1fr;
+            grid-template-rows: 50px 80px 120px 50px 50px;
             grid-template-areas:
                 "img menu"
                 "init ."
@@ -17,7 +17,7 @@
                 "company .";
             align-items: flex-end;
             justify-items: flex-end;
-    
+
             .logo {
                 grid-area: img;
                 width: 100px;
@@ -25,35 +25,71 @@
                 padding-left: 20px;
                 margin-top: 15px;
             }
-    
+
             ul {
                 visibility: visible;
+                width: 65vw;
+                height: 100vh;
+                background-color: white;
                 margin-top: 15px;
                 display: flex;
                 flex-direction: column;
-    
+
                 li {
                     padding: 0 30px 0 0;
                 }
             }
 
-            
-            .start {
-                margin-left: 100px;
-            }
 
             .end {
-                margin-right: 10px;
+                align-items: center;
+
+                li {
+                    margin-bottom: 15px;
+
+                    .register {
+                        padding: 10px 60px 10px 60px;
+                    }
+                }
             }
 
             .active-menu {
-                visibility: visible;
                 cursor: pointer;
                 grid-area: menu;
                 margin: 10px 20px 0px 0px;
+
+                .menu {
+                    visibility: visible;
+                }
+
+                .close {
+                    visibility: hidden;
+                }
             }
+
+            .features-menu {
+                margin: -35px 65px;
+                border-radius: unset;
+                box-shadow: unset;
+
+                li {
+                    padding-bottom: 5px;
+                }
+            }
+
+            .company-menu {
+                margin-top: -180px;
+                margin-right: 90px;
+                background-color: white;
+                border-radius: unset;
+                box-shadow: unset;
+                
+                li {
+                    padding-bottom: 5px;
+                }
+            } 
         }
-    
+
     }
 
     section {
@@ -64,17 +100,17 @@
             "hero"
             "left";
         align-items: flex-start;
-        
+
         .left {
             margin: 0px 0px;
             text-align: center;
-    
+
             h1 {
                 font-size: 3.5rem;
                 width: 100%;
                 margin-top: 10px;
             }
-    
+
             p {
                 margin-top: 7px;
                 font-weight: 700;
@@ -82,21 +118,21 @@
                 color: hsl(0, 0%, 41%);
                 line-height: 25px;
             }
-            
+
             button {
                 margin-top: 10px;
             }
-    
+
             div {
                 margin-top: 35px;
-    
+
                 img {
                     margin-left: -5px;
                     transform: scale(0.8);
                 }
             }
         }
-    
+
         .hero {
             grid-area: hero;
             background-image: url(../images/image-hero-mobile.png);
