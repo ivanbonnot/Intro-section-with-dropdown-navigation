@@ -36,9 +36,12 @@ header {
             flex-direction: row;
 
             li {
-                padding: 0 15px 0 0;
-
+                
+                .second {
+                    margin-right: 35px;
+                }
                 .register {
+                    margin-right: 35px;
                     padding: 10px 22px 10px 22px;
                     border-radius: 15px;
                     border: 1px solid hsl(0, 0%, 41%);;
@@ -56,6 +59,10 @@ header {
                         color: black;
                     }
                 }
+
+                .careers {
+                    padding-right: 10px;
+                }
             }
 
             .features-menu {
@@ -66,7 +73,7 @@ header {
 
             .features-submenu {
                 grid-area: features;
-                visibility: hidden ;
+                visibility: hidden;
                 display: flex;
                 flex-wrap: nowrap;
                 flex-direction: column;
@@ -75,6 +82,7 @@ header {
                 height: 160px;
                 width: 170px;
                 margin: 15px 0px 0px -55px;
+                padding-left: 0px;
                 background-color: white;
                 border-radius: 8px;
                 box-shadow: 7px 7px 7px 7px #00000031;

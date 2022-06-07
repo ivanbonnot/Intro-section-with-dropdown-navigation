@@ -37,21 +37,24 @@ header {
       list-style-type: none;
       display: flex;
       flex-direction: row; }
-      header nav ul li {
-        padding: 0 15px 0 0; }
-        header nav ul li .register {
-          padding: 10px 22px 10px 22px;
-          border-radius: 15px;
-          border: 1px solid dimgray; }
-        header nav ul li a {
-          color: dimgray;
-          font-weight: 500;
-          padding-left: 30px;
-          text-decoration: none;
-          transition: ease-in-out 0.3s; }
-          header nav ul li a:hover {
-            cursor: pointer;
-            color: black; }
+      header nav ul li .second {
+        margin-right: 35px; }
+      header nav ul li .register {
+        margin-right: 35px;
+        padding: 10px 22px 10px 22px;
+        border-radius: 15px;
+        border: 1px solid dimgray; }
+      header nav ul li a {
+        color: dimgray;
+        font-weight: 500;
+        padding-left: 30px;
+        text-decoration: none;
+        transition: ease-in-out 0.3s; }
+        header nav ul li a:hover {
+          cursor: pointer;
+          color: black; }
+      header nav ul li .careers {
+        padding-right: 10px; }
       header nav ul .features-menu {
         display: flex;
         flex-direction: column;
@@ -67,6 +70,7 @@ header {
         height: 160px;
         width: 170px;
         margin: 15px 0px 0px -55px;
+        padding-left: 0px;
         background-color: white;
         border-radius: 8px;
         box-shadow: 7px 7px 7px 7px #00000031;
