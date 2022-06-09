@@ -38,7 +38,7 @@ header {
       display: flex;
       flex-direction: row; }
       header nav ul li .second {
-        margin-right: 35px; }
+        margin: 35px; }
       header nav ul li .register {
         margin-right: 35px;
         padding: 10px 22px 10px 22px;
@@ -54,13 +54,12 @@ header {
           cursor: pointer;
           color: black; }
       header nav ul li .careers {
-        padding-right: 10px; }
+        padding: 0px 20px 0px 15px; }
       header nav ul .features-menu {
         display: flex;
         flex-direction: column;
         padding-right: 30px; }
       header nav ul .features-submenu {
-        grid-area: features;
         visibility: hidden;
         display: flex;
         flex-wrap: nowrap;
@@ -81,7 +80,6 @@ header {
         display: flex;
         flex-direction: column; }
         header nav ul .company-menu .company-submenu {
-          grid-area: company;
           visibility: hidden;
           display: flex;
           flex-wrap: nowrap;
@@ -143,7 +141,7 @@ section {
   section .hero {
     grid-area: hero;
     background-image: url(../images/image-hero-desktop.png);
-    margin-left: 50px;
+    margin-left: 30px;
     width: 100%;
     height: 100%;
     background-position: center;
@@ -151,61 +149,60 @@ section {
     background-size: contain; }
 
 @media screen and (max-width: 375px) {
-  header {
-    position: absolute; }
-    header nav {
-      width: 100vw;
-      height: 100vh;
-      padding: 0px;
-      grid-template-columns: 100px 275px;
-      grid-template-rows: 50px 80px 120px 50px 50px;
-      grid-template-areas: "img menu" "init ." "features ." "ending ." "company .";
-      align-items: flex-end;
-      justify-items: flex-end; }
-      header nav .logo {
-        grid-area: img;
-        width: 100px;
-        height: 25px;
-        padding-left: 20px;
-        margin-top: 15px; }
-      header nav ul {
-        visibility: visible;
-        width: 65vw;
-        height: 100vh;
-        background-color: white;
-        margin-top: 15px;
-        display: flex;
-        flex-direction: column; }
-        header nav ul li {
-          padding: 0 30px 0 0; }
-      header nav .end {
-        align-items: center; }
-        header nav .end li {
-          margin-bottom: 15px; }
-          header nav .end li .register {
-            padding: 10px 60px 10px 60px; }
-      header nav .active-menu {
-        cursor: pointer;
-        grid-area: menu;
-        margin: 10px 20px 0px 0px; }
-        header nav .active-menu .menu {
-          visibility: visible; }
-        header nav .active-menu .close {
-          visibility: hidden; }
-      header nav .features-menu {
-        margin: -35px 65px;
+  header nav {
+    width: 100vw;
+    height: 50px;
+    padding: 0px;
+    grid-template-columns: 100px 275px;
+    grid-template-rows: 50px 1fr 1fr;
+    grid-template-areas: "img menu" ". init" ". ending";
+    align-items: flex-end;
+    justify-items: flex-end; }
+    header nav .logo {
+      grid-area: img;
+      width: 100px;
+      height: 25px;
+      padding-left: 10px;
+      margin-top: 15px; }
+    header nav ul {
+      visibility: visible;
+      width: 65vw;
+      height: 100%;
+      background-color: white;
+      margin-top: -50px;
+      flex-direction: column;
+      padding: 0 0 0 0; }
+      header nav ul li {
+        padding: 0 0px 0 0; }
+        header nav ul li .careers {
+          padding: 0 0 0 0; }
+      header nav ul .features-menu {
+        margin-top: 50px;
+        padding: 0 0 0 0; }
+        header nav ul .features-menu .features-submenu {
+          margin: 0 0 0 10px;
+          border-radius: unset;
+          box-shadow: unset; }
+          header nav ul .features-menu .features-submenu li {
+            padding-bottom: 5px; }
+      header nav ul .company-menu .company-submenu {
         border-radius: unset;
-        box-shadow: unset; }
-        header nav .features-menu li {
+        box-shadow: unset;
+        margin: 0px 0 0 40px; }
+        header nav ul .company-menu .company-submenu li {
           padding-bottom: 5px; }
-      header nav .company-menu {
-        margin-top: -180px;
-        margin-right: 90px;
-        background-color: white;
-        border-radius: unset;
-        box-shadow: unset; }
-        header nav .company-menu li {
-          padding-bottom: 5px; }
+    header nav .end li {
+      margin-bottom: 15px; }
+      header nav .end li .register {
+        padding: 10px 60px 10px 60px; }
+    header nav .active-menu {
+      cursor: pointer;
+      grid-area: menu;
+      margin: 10px 0px 0px 0px; }
+      header nav .active-menu .menu {
+        visibility: visible; }
+      header nav .active-menu .close {
+        visibility: hidden; }
   section {
     padding: 0px;
     grid-template-columns: 1fr;
@@ -235,5 +232,5 @@ section {
     section .hero {
       grid-area: hero;
       background-image: url(../images/image-hero-mobile.png);
-      margin: 20px 0px 0px 0px;
+      margin: 50px 0px 0px 0px;
       height: 50vh; } }

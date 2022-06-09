@@ -1,20 +1,16 @@
 @media screen and (max-width: 375px) {
 
     header {
-        position: absolute;
-
         nav {
             width: 100vw;
-            height: 100vh;
+            height: 50px;
             padding: 0px;
             grid-template-columns: 100px 275px;
-            grid-template-rows: 50px 80px 120px 50px 50px;
+            grid-template-rows: 50px 1fr 1fr;
             grid-template-areas:
                 "img menu"
-                "init ."
-                "features ."
-                "ending ."
-                "company .";
+                ". init"
+                ". ending";
             align-items: flex-end;
             justify-items: flex-end;
 
@@ -22,41 +18,72 @@
                 grid-area: img;
                 width: 100px;
                 height: 25px;
-                padding-left: 20px;
+                padding-left: 10px;
                 margin-top: 15px;
             }
 
             ul {
                 visibility: visible;
                 width: 65vw;
-                height: 100vh;
+                height: 100%;
                 background-color: white;
-                margin-top: 15px;
-                display: flex;
+                margin-top: -50px;
                 flex-direction: column;
+                padding: 0 0 0 0;
+
 
                 li {
-                    padding: 0 30px 0 0;
+                    padding: 0 0px 0 0;
+
+                    .careers {
+                        padding: 0 0 0 0;
+                    }
                 }
+
+                .features-menu {
+                    margin-top: 50px;
+                    padding: 0 0 0 0;
+
+                    .features-submenu {
+                        margin: 0 0 0 10px;
+                        border-radius: unset;
+                        box-shadow: unset;
+        
+                        li {
+                            padding-bottom: 5px;
+                        }
+                    }
+                }
+                
+                .company-menu {
+                    .company-submenu {
+                        border-radius: unset;
+                        box-shadow: unset;
+                        margin: 0px 0 0 40px;
+                        
+                        li {
+                            padding-bottom: 5px;
+                        }
+                    } 
+                }
+                
             }
 
 
             .end {
-                align-items: center;
-
                 li {
                     margin-bottom: 15px;
-
                     .register {
                         padding: 10px 60px 10px 60px;
                     }
                 }
             }
 
+
             .active-menu {
                 cursor: pointer;
                 grid-area: menu;
-                margin: 10px 20px 0px 0px;
+                margin: 10px 0px 0px 0px;
 
                 .menu {
                     visibility: visible;
@@ -67,30 +94,11 @@
                 }
             }
 
-            .features-menu {
-                margin: -35px 65px;
-                border-radius: unset;
-                box-shadow: unset;
-
-                li {
-                    padding-bottom: 5px;
-                }
-            }
-
-            .company-menu {
-                margin-top: -180px;
-                margin-right: 90px;
-                background-color: white;
-                border-radius: unset;
-                box-shadow: unset;
-                
-                li {
-                    padding-bottom: 5px;
-                }
-            } 
+            
         }
-
     }
+
+    //NavBAR hasta
 
     section {
         padding: 0px;
@@ -136,7 +144,7 @@
         .hero {
             grid-area: hero;
             background-image: url(../images/image-hero-mobile.png);
-            margin: 20px 0px 0px 0px;
+            margin: 50px 0px 0px 0px;
             height: 50vh;
         }
     }

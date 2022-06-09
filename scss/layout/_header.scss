@@ -38,7 +38,7 @@ header {
             li {
                 
                 .second {
-                    margin-right: 35px;
+                    margin: 35px;
                 }
                 .register {
                     margin-right: 35px;
@@ -61,7 +61,7 @@ header {
                 }
 
                 .careers {
-                    padding-right: 10px;
+                    padding: 0px 20px 0px 15px;
                 }
             }
 
@@ -72,7 +72,6 @@ header {
             }
 
             .features-submenu {
-                grid-area: features;
                 visibility: hidden;
                 display: flex;
                 flex-wrap: nowrap;
@@ -98,7 +97,6 @@ header {
                 flex-direction: column;
 
                 .company-submenu {
-                    grid-area: company;
                     visibility: hidden;
                     display: flex;
                     flex-wrap: nowrap;
