@@ -20,19 +20,18 @@ header nav {
   position: fixed;
   left: 0;
   top: 0; }
+  header nav .logo {
+    position: absolute;
+    width: 100px;
+    height: 25px;
+    margin: 20px 0px 0px 20px; }
   header nav .navbar {
-    position: relative;
     width: 100vw;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 0px; }
-    header nav .navbar .logo {
-      grid-area: img;
-      width: 100px;
-      height: 25px;
-      padding-left: 10px; }
     header nav .navbar .start {
       position: absolute;
       left: 140px;
@@ -106,8 +105,12 @@ header nav {
           display: none; }
           header nav .navbar ul .company-menu .company-submenu li {
             padding-bottom: 5px; }
-    header nav .navbar .active-menu {
-      visibility: hidden; }
+  header nav .active-menu {
+    position: absolute; }
+    header nav .active-menu .menu {
+      display: none; }
+    header nav .active-menu .close {
+      display: none; }
 
 section {
   padding: 100px;
@@ -154,3 +157,22 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain; }
+
+@media screen and (max-width: 830px) {
+  header nav .navbar .start {
+    left: 70px; } }
+
+@media screen and (max-width: 740px) {
+  header nav .navbar {
+    flex-direction: column; }
+    header nav .navbar .start {
+      background-color: #e6e6e6;
+      display: block; }
+    header nav .navbar .end {
+      background-color: #e6e6e6;
+      display: block; }
+  header nav .active-menu {
+    position: relative; }
+    header nav .active-menu .menu {
+      display: block;
+      margin-right: 10px; } }

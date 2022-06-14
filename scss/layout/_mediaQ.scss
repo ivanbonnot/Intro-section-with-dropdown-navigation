@@ -1,3 +1,49 @@
+@media screen and (max-width: 830px) {
+    header {
+        nav {
+            .navbar {
+                .start {      
+                    left: 70px;    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 740px) {
+    header {
+        nav {
+            .navbar {
+                flex-direction: column;
+                ul {
+                    
+                }
+
+                .start {      
+                    background-color: hsl(0, 0%, 90%);
+                    display: block;   
+                }
+
+                .end {
+                    background-color: hsl(0, 0%, 90%);
+                    display: block;
+                }
+
+                
+            }
+            .active-menu {
+                position: relative;
+                .menu {
+                    display: block;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+
 // @media screen and (max-width: 375px) {
 
 //     header {
