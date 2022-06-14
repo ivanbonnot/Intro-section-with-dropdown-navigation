@@ -154,7 +154,7 @@ section {
     height: 50px;
     padding: 0px;
     grid-template-columns: 100px 275px;
-    grid-template-rows: 50px 1fr 1fr;
+    grid-template-rows: 50px 200px 1fr;
     grid-template-areas: "img menu" ". init" ". ending";
     align-items: flex-end;
     justify-items: flex-end; }
@@ -167,15 +167,12 @@ section {
     header nav ul {
       visibility: visible;
       width: 65vw;
-      height: 100%;
       background-color: white;
-      margin-top: -50px;
+      margin-top: -0px;
       flex-direction: column;
       padding: 0 0 0 0; }
       header nav ul li {
         padding: 0 0px 0 0; }
-        header nav ul li .careers {
-          padding: 0 0 0 0; }
       header nav ul .features-menu {
         margin-top: 50px;
         padding: 0 0 0 0; }
@@ -185,12 +182,14 @@ section {
           box-shadow: unset; }
           header nav ul .features-menu .features-submenu li {
             padding-bottom: 5px; }
-      header nav ul .company-menu .company-submenu {
-        border-radius: unset;
-        box-shadow: unset;
-        margin: 0px 0 0 40px; }
-        header nav ul .company-menu .company-submenu li {
-          padding-bottom: 5px; }
+      header nav ul .company-menu {
+        margin-top: -150px; }
+        header nav ul .company-menu .company-submenu {
+          border-radius: unset;
+          box-shadow: unset;
+          margin: 0px 0 0 40px; }
+          header nav ul .company-menu .company-submenu li {
+            padding-bottom: 5px; }
     header nav .end li {
       margin-bottom: 15px; }
       header nav .end li .register {

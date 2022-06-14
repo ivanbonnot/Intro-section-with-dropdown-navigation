@@ -6,7 +6,7 @@
             height: 50px;
             padding: 0px;
             grid-template-columns: 100px 275px;
-            grid-template-rows: 50px 1fr 1fr;
+            grid-template-rows: 50px 200px 1fr;
             grid-template-areas:
                 "img menu"
                 ". init"
@@ -25,9 +25,9 @@
             ul {
                 visibility: visible;
                 width: 65vw;
-                height: 100%;
+                // height: 100%;
                 background-color: white;
-                margin-top: -50px;
+                margin-top: -0px;
                 flex-direction: column;
                 padding: 0 0 0 0;
 
@@ -36,7 +36,7 @@
                     padding: 0 0px 0 0;
 
                     .careers {
-                        padding: 0 0 0 0;
+                        
                     }
                 }
 
@@ -56,6 +56,8 @@
                 }
                 
                 .company-menu {
+                    margin-top: -150px;
+
                     .company-submenu {
                         border-radius: unset;
                         box-shadow: unset;
