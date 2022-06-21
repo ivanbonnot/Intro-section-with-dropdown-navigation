@@ -22,8 +22,21 @@
                 margin-top: 15px;
 =======
             .navbar {
-                .start {      
-                    left: 70px;    
+                ul {
+                    li {
+                        .second {
+                            margin: 20px;
+                        }
+
+                        .register {
+                            margin-right: 20px;
+                        }
+                    }
+                }
+
+                .start {
+                    margin-left: 5px;
+                    left: 70px;
                 }
 >>>>>>> 7efe3b68a3d8549cd8d076c8a4527d4ee57ab0e2
             }
@@ -50,18 +63,23 @@
                     }
 =======
 @media screen and (max-width: 740px) {
+
     header {
         nav {
             .navbar {
                 flex-direction: column;
+<<<<<<< HEAD
                 ul {
                     
 >>>>>>> 7efe3b68a3d8549cd8d076c8a4527d4ee57ab0e2
                 }
+=======
+>>>>>>> 32d34996197a2dd30d27a6a448dc24f18dd718f3
 
-                .start {      
+
+                .start {
                     background-color: hsl(0, 0%, 90%);
-                    display: block;   
+                    display: block;
                 }
 
 <<<<<<< HEAD
@@ -95,15 +113,68 @@
 >>>>>>> 7efe3b68a3d8549cd8d076c8a4527d4ee57ab0e2
                 }
 
-                
+
             }
+
             .active-menu {
-                position: relative;
+                position: absolute;
+                top: 20px;
+                left: 90%;
+
                 .menu {
                     display: block;
-                    margin-right: 10px;
+                    margin-right: 0px;
                 }
             }
+        }
+    }
+
+    section {
+        grid-template-columns: 1fr;
+        padding: 0px;
+        grid-template-rows: 0.5fr 0.5fr;
+        grid-template-areas:
+            "hero"
+            "left";
+        align-items: flex-start;
+
+        .left {
+            margin: 0px 0px;
+            text-align: center;
+
+            h1 {
+                font-size: 3.5rem;
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            p {
+                margin-top: 7px;
+                font-weight: 700;
+                width: 100%;
+                color: hsl(0, 0%, 41%);
+                line-height: 25px;
+            }
+
+            button {
+                margin-top: 10px;
+            }
+
+            div {
+                margin-top: 35px;
+
+                img {
+                    margin-left: -5px;
+                    transform: scale(0.8);
+                }
+            }
+        }
+
+        .hero {
+            grid-area: hero;
+            background-image: url(../images/image-hero-mobile.png);
+            margin: 60px 0px 0px 0px;
+            height: 50vh;
         }
     }
 }
@@ -160,25 +231,25 @@
 //                         margin: 0 0 0 10px;
 //                         border-radius: unset;
 //                         box-shadow: unset;
-        
+
 //                         li {
 //                             padding-bottom: 5px;
 //                         }
 //                     }
 //                 }
-                
+
 //                 .company-menu {
 //                     .company-submenu {
 //                         border-radius: unset;
 //                         box-shadow: unset;
 //                         margin: 0px 0 0 40px;
-                        
+
 //                         li {
 //                             padding-bottom: 5px;
 //                         }
 //                     } 
 //                 }
-                
+
 //             }
 
 
@@ -206,7 +277,7 @@
 //                 }
 //             }
 
-            
+
 //         }
 //     }
 
