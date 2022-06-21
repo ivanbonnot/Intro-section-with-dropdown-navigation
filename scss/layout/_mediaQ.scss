@@ -1,7 +1,7 @@
-@media screen and (max-width: 375px) {
-
+@media screen and (max-width: 830px) {
     header {
         nav {
+<<<<<<< HEAD
             width: 100vw;
             height: 50px;
             padding: 0px;
@@ -20,8 +20,18 @@
                 height: 25px;
                 padding-left: 10px;
                 margin-top: 15px;
+=======
+            .navbar {
+                .start {      
+                    left: 70px;    
+                }
+>>>>>>> 7efe3b68a3d8549cd8d076c8a4527d4ee57ab0e2
             }
+        }
+    }
+}
 
+<<<<<<< HEAD
             ul {
                 visibility: visible;
                 width: 65vw;
@@ -38,12 +48,23 @@
                     .careers {
                         
                     }
+=======
+@media screen and (max-width: 740px) {
+    header {
+        nav {
+            .navbar {
+                flex-direction: column;
+                ul {
+                    
+>>>>>>> 7efe3b68a3d8549cd8d076c8a4527d4ee57ab0e2
                 }
 
-                .features-menu {
-                    margin-top: 50px;
-                    padding: 0 0 0 0;
+                .start {      
+                    background-color: hsl(0, 0%, 90%);
+                    display: block;   
+                }
 
+<<<<<<< HEAD
                     .features-submenu {
                         margin: 0 0 0 10px;
                         border-radius: unset;
@@ -67,87 +88,176 @@
                             padding-bottom: 5px;
                         }
                     } 
+=======
+                .end {
+                    background-color: hsl(0, 0%, 90%);
+                    display: block;
+>>>>>>> 7efe3b68a3d8549cd8d076c8a4527d4ee57ab0e2
                 }
+
                 
             }
-
-
-            .end {
-                li {
-                    margin-bottom: 15px;
-                    .register {
-                        padding: 10px 60px 10px 60px;
-                    }
-                }
-            }
-
-
             .active-menu {
-                cursor: pointer;
-                grid-area: menu;
-                margin: 10px 0px 0px 0px;
-
+                position: relative;
                 .menu {
-                    visibility: visible;
-                }
-
-                .close {
-                    visibility: hidden;
+                    display: block;
+                    margin-right: 10px;
                 }
             }
-
-            
-        }
-    }
-
-    //NavBAR hasta
-
-    section {
-        padding: 0px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 0.5fr;
-        grid-template-areas:
-            "hero"
-            "left";
-        align-items: flex-start;
-
-        .left {
-            margin: 0px 0px;
-            text-align: center;
-
-            h1 {
-                font-size: 3.5rem;
-                width: 100%;
-                margin-top: 10px;
-            }
-
-            p {
-                margin-top: 7px;
-                font-weight: 700;
-                width: 100%;
-                color: hsl(0, 0%, 41%);
-                line-height: 25px;
-            }
-
-            button {
-                margin-top: 10px;
-            }
-
-            div {
-                margin-top: 35px;
-
-                img {
-                    margin-left: -5px;
-                    transform: scale(0.8);
-                }
-            }
-        }
-
-        .hero {
-            grid-area: hero;
-            background-image: url(../images/image-hero-mobile.png);
-            margin: 50px 0px 0px 0px;
-            height: 50vh;
         }
     }
 }
+
+
+
+// @media screen and (max-width: 375px) {
+
+//     header {
+//         nav {
+//             width: 100vw;
+//             height: 50px;
+//             padding: 0px;
+//             grid-template-columns: 100px 275px;
+//             grid-template-rows: 50px 1fr 1fr;
+//             grid-template-areas:
+//                 "img menu"
+//                 ". init"
+//                 ". ending";
+//             align-items: flex-end;
+//             justify-items: flex-end;
+
+//             .logo {
+//                 grid-area: img;
+//                 width: 100px;
+//                 height: 25px;
+//                 padding-left: 10px;
+//                 margin-top: 15px;
+//             }
+
+//             ul {
+//                 visibility: visible;
+//                 width: 65vw;
+//                 height: 100%;
+//                 background-color: white;
+//                 margin-top: -50px;
+//                 flex-direction: column;
+//                 padding: 0 0 0 0;
+
+
+//                 li {
+//                     padding: 0 0px 0 0;
+
+//                     .careers {
+//                         padding: 0 0 0 0;
+//                     }
+//                 }
+
+//                 .features-menu {
+//                     margin-top: 50px;
+//                     padding: 0 0 0 0;
+
+//                     .features-submenu {
+//                         margin: 0 0 0 10px;
+//                         border-radius: unset;
+//                         box-shadow: unset;
+        
+//                         li {
+//                             padding-bottom: 5px;
+//                         }
+//                     }
+//                 }
+                
+//                 .company-menu {
+//                     .company-submenu {
+//                         border-radius: unset;
+//                         box-shadow: unset;
+//                         margin: 0px 0 0 40px;
+                        
+//                         li {
+//                             padding-bottom: 5px;
+//                         }
+//                     } 
+//                 }
+                
+//             }
+
+
+//             .end {
+//                 li {
+//                     margin-bottom: 15px;
+//                     .register {
+//                         padding: 10px 60px 10px 60px;
+//                     }
+//                 }
+//             }
+
+
+//             .active-menu {
+//                 cursor: pointer;
+//                 grid-area: menu;
+//                 margin: 10px 0px 0px 0px;
+
+//                 .menu {
+//                     visibility: visible;
+//                 }
+
+//                 .close {
+//                     visibility: hidden;
+//                 }
+//             }
+
+            
+//         }
+//     }
+
+//     //NavBAR hasta
+
+//     section {
+//         padding: 0px;
+//         grid-template-columns: 1fr;
+//         grid-template-rows: 0.5fr 0.5fr;
+//         grid-template-areas:
+//             "hero"
+//             "left";
+//         align-items: flex-start;
+
+//         .left {
+//             margin: 0px 0px;
+//             text-align: center;
+
+//             h1 {
+//                 font-size: 3.5rem;
+//                 width: 100%;
+//                 margin-top: 10px;
+//             }
+
+//             p {
+//                 margin-top: 7px;
+//                 font-weight: 700;
+//                 width: 100%;
+//                 color: hsl(0, 0%, 41%);
+//                 line-height: 25px;
+//             }
+
+//             button {
+//                 margin-top: 10px;
+//             }
+
+//             div {
+//                 margin-top: 35px;
+
+//                 img {
+//                     margin-left: -5px;
+//                     transform: scale(0.8);
+//                 }
+//             }
+//         }
+
+//         .hero {
+//             grid-area: hero;
+//             background-image: url(../images/image-hero-mobile.png);
+//             margin: 50px 0px 0px 0px;
+//             height: 50vh;
+//         }
+//     }
+// }
