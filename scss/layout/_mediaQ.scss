@@ -1,26 +1,6 @@
 @media screen and (max-width: 830px) {
     header {
         nav {
-<<<<<<< HEAD
-            width: 100vw;
-            height: 50px;
-            padding: 0px;
-            grid-template-columns: 100px 275px;
-            grid-template-rows: 50px 200px 1fr;
-            grid-template-areas:
-                "img menu"
-                ". init"
-                ". ending";
-            align-items: flex-end;
-            justify-items: flex-end;
-
-            .logo {
-                grid-area: img;
-                width: 100px;
-                height: 25px;
-                padding-left: 10px;
-                margin-top: 15px;
-=======
             .navbar {
                 ul {
                     li {
@@ -38,43 +18,11 @@
                     margin-left: 5px;
                     left: 70px;
                 }
->>>>>>> 7efe3b68a3d8549cd8d076c8a4527d4ee57ab0e2
             }
         }
     }
 }
 
-<<<<<<< HEAD
-            ul {
-                visibility: visible;
-                width: 65vw;
-                // height: 100%;
-                background-color: white;
-                margin-top: -0px;
-                flex-direction: column;
-                padding: 0 0 0 0;
-
-
-                li {
-                    padding: 0 0px 0 0;
-
-                    .careers {
-                        
-                    }
-=======
-@media screen and (max-width: 740px) {
-
-    header {
-        nav {
-            .navbar {
-                flex-direction: column;
-<<<<<<< HEAD
-                ul {
-                    
->>>>>>> 7efe3b68a3d8549cd8d076c8a4527d4ee57ab0e2
-                }
-=======
->>>>>>> 32d34996197a2dd30d27a6a448dc24f18dd718f3
 
 
                 .start {
@@ -82,39 +30,13 @@
                     display: block;
                 }
 
-<<<<<<< HEAD
-                    .features-submenu {
-                        margin: 0 0 0 10px;
-                        border-radius: unset;
-                        box-shadow: unset;
-        
-                        li {
-                            padding-bottom: 5px;
-                        }
-                    }
-                }
-                
-                .company-menu {
-                    margin-top: -150px;
-
-                    .company-submenu {
-                        border-radius: unset;
-                        box-shadow: unset;
-                        margin: 0px 0 0 40px;
-                        
-                        li {
-                            padding-bottom: 5px;
-                        }
-                    } 
-=======
                 .end {
                     background-color: hsl(0, 0%, 90%);
                     display: block;
->>>>>>> 7efe3b68a3d8549cd8d076c8a4527d4ee57ab0e2
                 }
 
 
-            }
+            
 
             .active-menu {
                 position: absolute;
@@ -126,8 +48,8 @@
                     margin-right: 0px;
                 }
             }
-        }
-    }
+        
+    
 
     section {
         grid-template-columns: 1fr;
@@ -177,7 +99,7 @@
             height: 50vh;
         }
     }
-}
+
 
 
 
