@@ -167,50 +167,87 @@ section {
     margin-left: 5px;
     left: 70px; } }
 
-.start {
-  background-color: #e6e6e6;
-  display: block; }
+@media screen and (max-width: 740px) {
+  header nav .logo {
+    width: 75px; }
+  header nav .navbar {
+    background-color: #b3b3b3;
+    height: 100vh;
+    width: 60vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    line-height: 40px;
+    justify-content: space-around; }
+    header nav .navbar .start {
+      background-color: #b3b3b3;
+      display: block;
+      left: 0px;
+      margin: 0px; }
+    header nav .navbar .end {
+      background-color: #b3b3b3;
+      display: block;
+      z-index: +100; }
+  header nav .active-menu {
+    position: absolute;
+    top: 20px;
+    left: 90%; }
+    header nav .active-menu .menu {
+      display: block;
+      margin-right: 0px; }
+  section {
+    grid-template-columns: 1fr;
+    padding: 0px;
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas: "hero" "left";
+    align-items: flex-start; }
+    section .left {
+      margin: 0px 0px;
+      text-align: center; }
+      section .left h1 {
+        font-size: 3.5rem;
+        width: 100%;
+        margin-top: 10px; }
+      section .left p {
+        margin-top: 7px;
+        font-weight: 700;
+        width: 100%;
+        color: dimgray;
+        line-height: 25px; }
+      section .left button {
+        margin-top: 10px; }
+      section .left div {
+        margin-top: 35px; }
+        section .left div img {
+          margin-left: -5px;
+          transform: scale(0.8); }
+    section .hero {
+      grid-area: hero;
+      background-image: url(../images/image-hero-mobile.png);
+      margin: 60px 0px 0px 0px;
+      height: 50vh; } }
 
-.end {
-  background-color: #e6e6e6;
-  display: block; }
-
-.active-menu {
-  position: absolute;
-  top: 20px;
-  left: 90%; }
-  .active-menu .menu {
-    display: block;
-    margin-right: 0px; }
-
-section {
-  grid-template-columns: 1fr;
-  padding: 0px;
-  grid-template-rows: 0.5fr 0.5fr;
-  grid-template-areas: "hero" "left";
-  align-items: flex-start; }
-  section .left {
-    margin: 0px 0px;
-    text-align: center; }
-    section .left h1 {
-      font-size: 3.5rem;
-      width: 100%;
-      margin-top: 10px; }
-    section .left p {
-      margin-top: 7px;
-      font-weight: 700;
-      width: 100%;
-      color: dimgray;
-      line-height: 25px; }
-    section .left button {
-      margin-top: 10px; }
-    section .left div {
-      margin-top: 35px; }
-      section .left div img {
-        margin-left: -5px;
-        transform: scale(0.8); }
-  section .hero {
-    grid-area: hero;
-    background-image: url(../images/image-hero-mobile.png);
-    margin: 60px 0px 0px 0px;
-    height: 50vh; }
+@media screen and (max-width: 375px) {
+  header nav .navbar {
+    background-color: #b3b3b3;
+    height: 100vh;
+    width: 65vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    flex-direction: column;
+    line-height: 40px; }
+    header nav .navbar .start {
+      background-color: #b3b3b3;
+      display: block; }
+    header nav .navbar .end {
+      background-color: #b3b3b3;
+      display: block; }
+  header nav .active-menu {
+    position: absolute;
+    top: 20px;
+    left: 90%; }
+    header nav .active-menu .menu {
+      display: block;
+      margin-right: 0px; } }
