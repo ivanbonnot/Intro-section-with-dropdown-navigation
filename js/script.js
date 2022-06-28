@@ -24,24 +24,28 @@ const close = document.querySelector(".close");
 
 const endPart = document.querySelector('.end');
 
+const navactive = document.getElementById('navactive');
+
 
 let mediaqueryList = window.matchMedia("(max-width: 740px)");
 
 if (mediaqueryList.matches) {
 
-  menu.addEventListener("mouseenter", ()=> {
+  menu.addEventListener("click", () => {
     navbar.style.display = 'flex';
+    navactive.classList.add("navbar-active")
+    close.style.display = 'block'
     menu.style.display = 'none';
-    close.style.display = 'block';
   })
-  
-  
-  close.addEventListener("mouseenter",()=> {
+
+  close.addEventListener("click", () => {
     navbar.style.display = 'none';
+    close.style.display = 'none';
+    navactive.classList.remove("navbar-active")
+    menu.style.display = 'block';
   })
-  
-  
-  navbar.addEventListener("mouseenter", ()=> {
+
+  navbar.addEventListener("mouseenter", () => {
     navbar.style.display = 'flex';
   })
 
