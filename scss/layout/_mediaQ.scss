@@ -33,6 +33,7 @@
             }
 
             .navbar {
+                display: none;
                 background-color: hsl(0, 0%, 70%);
                 height: 100vh;
                 width: 60vw;
@@ -47,17 +48,46 @@
                     background-color: hsl(0, 0%, 70%);
                     display: block;
                     left: 0px;
-                    margin: 0px;
+                    margin: 100px 0px 0px 0px;
+                    padding: 0px;
                 }
 
                 .end {
                     background-color: hsl(0, 0%, 70%);
                     display: block;
                     z-index: +100;
-                    
+                    margin-top: 40px;
+                    transition: ease-in-out 0.5s
                 }
 
+                ul {
+                    li {
+                        .second {
+                            margin: 40px;
+                        }
 
+                        .register {
+                            padding: 10px 60px 10px 60px;
+                        }
+
+                    }
+                }
+
+                .features-menu {
+                    .features-submenu {
+                        left: 30px;
+                        border-radius: unset;
+                        box-shadow: unset;
+                    }
+                }
+
+                .company-menu {
+                    .company-submenu {
+                        left: 30px;
+                        border-radius: unset;
+                        box-shadow: unset;
+                    }
+                }
             }
 
             .active-menu {
@@ -66,6 +96,7 @@
                 left: 90%;
 
                 .menu {
+                    transition: ease-in-out 0.3s;
                     display: block;
                     margin-right: 0px;
                 }
