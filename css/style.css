@@ -17,7 +17,7 @@ header nav {
   background-color: #fafafa;
   width: 100vw;
   height: 60px;
-  position: fixed;
+  position: static;
   left: 0;
   top: 0; }
   header nav .logo {
@@ -167,13 +167,19 @@ section {
     margin-left: 5px;
     left: 70px; } }
 
+@media screen and (min-width: 740px) {
+  header nav .navbar {
+    display: flex !important; }
+  header nav .active-menu {
+    display: none; } }
+
 @media screen and (max-width: 740px) {
   header nav .logo {
     width: 75px; }
   header nav .navbar {
     display: none;
     background-color: #fafafa;
-    height: 100vh;
+    height: 122.5vh;
     width: 60vw;
     position: absolute;
     top: 0;
@@ -182,10 +188,11 @@ section {
     line-height: 40px;
     justify-content: space-around; }
     header nav .navbar .start {
+      height: 80%;
       background-color: #fafafa;
       display: block;
       left: 0px;
-      margin: 100px 0px 0px 0px;
+      margin: 0px 0px 0px 0px;
       padding: 0px; }
     header nav .navbar .end {
       background-color: #fafafa;
@@ -198,7 +205,7 @@ section {
     header nav .navbar ul li .register {
       padding: 10px 60px 10px 60px; }
     header nav .navbar ul .features-menu .features-submenu {
-      left: 30px;
+      left: 25px;
       border-radius: unset;
       box-shadow: unset; }
     header nav .navbar ul .company-menu .company-submenu {
@@ -208,9 +215,8 @@ section {
   header nav .active-menu {
     position: absolute;
     top: 20px;
-    left: 90%; }
-    header nav .active-menu .toggle-menu {
-      display: block; }
+    left: 90%;
+    z-index: 100; }
     header nav .active-menu .menu {
       transition: ease-in-out 0.3s;
       display: block;
@@ -218,6 +224,8 @@ section {
   .navbar-active {
     height: 100%;
     width: 100%;
+    top: 0px;
+    left: 0px;
     background: rgba(0, 0, 0, 0.6);
     transition: all 1s; }
   section {
@@ -242,7 +250,8 @@ section {
       section .left button {
         margin-top: 10px; }
       section .left div {
-        margin-top: 35px; }
+        margin-top: 35px;
+        z-index: -100; }
         section .left div img {
           margin-left: -5px;
           transform: scale(0.8); }
@@ -252,26 +261,28 @@ section {
       margin: 60px 0px 0px 0px;
       height: 50vh; } }
 
+@media screen and (max-width: 511px) {
+  header nav .navbar {
+    height: 127vh; } }
+
 @media screen and (max-width: 375px) {
   header nav .navbar {
-    background-color: #b3b3b3;
-    height: 100vh;
-    width: 65vw;
     position: absolute;
     top: 0;
     right: 0;
     flex-direction: column;
     line-height: 40px; }
     header nav .navbar .start {
-      background-color: #b3b3b3;
+      background-color: #fafafa;
       display: block; }
     header nav .navbar .end {
-      background-color: #b3b3b3;
+      background-color: #fafafa;
       display: block; }
   header nav .active-menu {
     position: absolute;
     top: 20px;
-    left: 90%; }
+    left: 90%;
+    margin-right: 10px; }
     header nav .active-menu .menu {
       display: block;
       margin-right: 0px; } }
