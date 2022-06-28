@@ -14,7 +14,7 @@ body {
   background-color: #fafafa; }
 
 header nav {
-  background-color: #e6e6e6;
+  background-color: #fafafa;
   width: 100vw;
   height: 60px;
   position: fixed;
@@ -171,7 +171,8 @@ section {
   header nav .logo {
     width: 75px; }
   header nav .navbar {
-    background-color: #b3b3b3;
+    display: none;
+    background-color: #fafafa;
     height: 100vh;
     width: 60vw;
     position: absolute;
@@ -181,21 +182,44 @@ section {
     line-height: 40px;
     justify-content: space-around; }
     header nav .navbar .start {
-      background-color: #b3b3b3;
+      background-color: #fafafa;
       display: block;
       left: 0px;
-      margin: 0px; }
+      margin: 100px 0px 0px 0px;
+      padding: 0px; }
     header nav .navbar .end {
-      background-color: #b3b3b3;
+      background-color: #fafafa;
       display: block;
-      z-index: +100; }
+      z-index: +100;
+      margin-top: 40px;
+      transition: ease-in-out 0.5s; }
+    header nav .navbar ul li .second {
+      margin: 40px; }
+    header nav .navbar ul li .register {
+      padding: 10px 60px 10px 60px; }
+    header nav .navbar ul .features-menu .features-submenu {
+      left: 30px;
+      border-radius: unset;
+      box-shadow: unset; }
+    header nav .navbar ul .company-menu .company-submenu {
+      left: 30px;
+      border-radius: unset;
+      box-shadow: unset; }
   header nav .active-menu {
     position: absolute;
     top: 20px;
     left: 90%; }
+    header nav .active-menu .toggle-menu {
+      display: block; }
     header nav .active-menu .menu {
+      transition: ease-in-out 0.3s;
       display: block;
       margin-right: 0px; }
+  .navbar-active {
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all 1s; }
   section {
     grid-template-columns: 1fr;
     padding: 0px;
