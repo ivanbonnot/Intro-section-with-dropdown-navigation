@@ -7,7 +7,6 @@
                         .second {
                             margin: 20px;
                         }
-
                         .register {
                             margin-right: 20px;
                         }
@@ -18,6 +17,19 @@
                     margin-left: 5px;
                     left: 70px;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 740px) {
+    header {
+        nav {
+            .navbar {
+                display: flex !important;
+            }
+            .active-menu {
+                display: none;
             }
         }
     }
@@ -35,7 +47,7 @@
             .navbar {
                 display: none;
                 background-color: hsl(0, 0%, 98%);
-                height: 100vh;
+                height: 122.5vh;
                 width: 60vw;
                 position: absolute;
                 top: 0;
@@ -45,10 +57,11 @@
                 justify-content: space-around;
 
                 .start {
+                    height: 80%;
                     background-color: hsl(0, 0%, 98%);
                     display: block;
                     left: 0px;
-                    margin: 100px 0px 0px 0px;
+                    margin: 0px 0px 0px 0px;
                     padding: 0px;
                 }
 
@@ -74,7 +87,7 @@
 
                     .features-menu {
                         .features-submenu {
-                            left: 30px;
+                            left: 25px;
                             border-radius: unset;
                             box-shadow: unset;
                         }
@@ -96,10 +109,7 @@
                 position: absolute;
                 top: 20px;
                 left: 90%;
-
-                .toggle-menu {
-                    display: block;
-                }
+                z-index: 100;
 
                 .menu {
                     transition: ease-in-out 0.3s;
@@ -111,11 +121,11 @@
     }
 
     .navbar-active {
-        // background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55));
-        // z-index: 101;
-        
+      
     height: 100%;
     width: 100%;
+    top: 0px;
+    left: 0px;
     background: rgba(0,0,0,.6);
     transition: all 1s;
     }
@@ -153,6 +163,7 @@
 
             div {
                 margin-top: 35px;
+                z-index: -100;
 
                 img {
                     margin-left: -5px;
@@ -170,16 +181,22 @@
         
     }
 }
+@media screen and (max-width: 511px) {
+    header {
+        nav {
+            .navbar {
+                height: 127vh;
+               
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 375px) {
 
     header {
         nav {
-
             .navbar {
-                background-color: hsl(0, 0%, 70%);
-                height: 100vh;
-                width: 65vw;
                 position: absolute;
                 top: 0;
                 right: 0;
@@ -187,12 +204,12 @@
                 line-height: 40px;
 
                 .start {
-                    background-color: hsl(0, 0%, 70%);
+                    background-color: hsl(0, 0%, 98%);
                     display: block;
                 }
 
                 .end {
-                    background-color: hsl(0, 0%, 70%);
+                    background-color: hsl(0, 0%, 98%);
                     display: block;
                 }
 
@@ -203,6 +220,7 @@
                 position: absolute;
                 top: 20px;
                 left: 90%;
+                margin-right: 10px;
 
                 .menu {
                     display: block;
@@ -212,155 +230,3 @@
         }
     }
 }
-
-// @media screen and (max-width: 375px) {
-
-//     header {
-//         nav {
-//             width: 100vw;
-//             height: 50px;
-//             padding: 0px;
-//             grid-template-columns: 100px 275px;
-//             grid-template-rows: 50px 1fr 1fr;
-//             grid-template-areas:
-//                 "img menu"
-//                 ". init"
-//                 ". ending";
-//             align-items: flex-end;
-//             justify-items: flex-end;
-
-//             .logo {
-//                 grid-area: img;
-//                 width: 100px;
-//                 height: 25px;
-//                 padding-left: 10px;
-//                 margin-top: 15px;
-//             }
-
-//             ul {
-//                 visibility: visible;
-//                 width: 65vw;
-//                 height: 100%;
-//                 background-color: white;
-//                 margin-top: -50px;
-//                 flex-direction: column;
-//                 padding: 0 0 0 0;
-
-
-//                 li {
-//                     padding: 0 0px 0 0;
-
-//                     .careers {
-//                         padding: 0 0 0 0;
-//                     }
-//                 }
-
-//                 .features-menu {
-//                     margin-top: 50px;
-//                     padding: 0 0 0 0;
-
-//                     .features-submenu {
-//                         margin: 0 0 0 10px;
-//                         border-radius: unset;
-//                         box-shadow: unset;
-
-//                         li {
-//                             padding-bottom: 5px;
-//                         }
-//                     }
-//                 }
-
-//                 .company-menu {
-//                     .company-submenu {
-//                         border-radius: unset;
-//                         box-shadow: unset;
-//                         margin: 0px 0 0 40px;
-
-//                         li {
-//                             padding-bottom: 5px;
-//                         }
-//                     } 
-//                 }
-
-//             }
-
-
-//             .end {
-//                 li {
-//                     margin-bottom: 15px;
-//                     .register {
-//                         padding: 10px 60px 10px 60px;
-//                     }
-//                 }
-//             }
-
-
-//             .active-menu {
-//                 cursor: pointer;
-//                 grid-area: menu;
-//                 margin: 10px 0px 0px 0px;
-
-//                 .menu {
-//                     visibility: visible;
-//                 }
-
-//                 .close {
-//                     visibility: hidden;
-//                 }
-//             }
-
-
-//         }
-//     }
-
-//     //NavBAR hasta
-
-//     section {
-//         padding: 0px;
-//         grid-template-columns: 1fr;
-//         grid-template-rows: 0.5fr 0.5fr;
-//         grid-template-areas:
-//             "hero"
-//             "left";
-//         align-items: flex-start;
-
-//         .left {
-//             margin: 0px 0px;
-//             text-align: center;
-
-//             h1 {
-//                 font-size: 3.5rem;
-//                 width: 100%;
-//                 margin-top: 10px;
-//             }
-
-//             p {
-//                 margin-top: 7px;
-//                 font-weight: 700;
-//                 width: 100%;
-//                 color: hsl(0, 0%, 41%);
-//                 line-height: 25px;
-//             }
-
-//             button {
-//                 margin-top: 10px;
-//             }
-
-//             div {
-//                 margin-top: 35px;
-
-//                 img {
-//                     margin-left: -5px;
-//                     transform: scale(0.8);
-//                 }
-//             }
-//         }
-
-//         .hero {
-//             grid-area: hero;
-//             background-image: url(../images/image-hero-mobile.png);
-//             margin: 50px 0px 0px 0px;
-//             height: 50vh;
-//         }
-//     }
-// }
