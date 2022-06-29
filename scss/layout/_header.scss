@@ -17,7 +17,7 @@ header {
 
         .logo {
             position: absolute;
-            width: 100px;
+            width: 75px;
             height: 25px;
             margin: 20px 0px 0px 20px;
         }
@@ -96,6 +96,7 @@ header {
                     }
 
                     .features-submenu {
+                        color: hsl(0, 0%, 41%);
                         position: absolute;
                         top: 55px;
                         right: 0px;
@@ -135,6 +136,7 @@ header {
                     }
 
                     .company-submenu {
+                        color: hsl(0, 0%, 41%);
                         position: absolute;
                         top: 55px;
                         left: 30px;
@@ -142,6 +144,7 @@ header {
                         flex-direction: column;
                         height: 140px;
                         width: 130px;
+                        padding-left: 0px;
                         line-height: 35px;
                         background-color: white;
                         border-radius: 8px;

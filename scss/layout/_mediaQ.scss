@@ -39,11 +39,6 @@
 
     header {
         nav {
-
-            .logo {
-                width: 75px;
-            }
-
             .navbar {
                 display: none;
                 background-color: hsl(0, 0%, 98%);
@@ -87,6 +82,7 @@
 
                     .features-menu {
                         .features-submenu {
+                            background-color: hsl(0, 0%, 98%);
                             left: 25px;
                             border-radius: unset;
                             box-shadow: unset;
@@ -95,6 +91,7 @@
     
                     .company-menu {
                         .company-submenu {
+                            background-color: hsl(0, 0%, 98%);
                             left: 30px;
                             border-radius: unset;
                             box-shadow: unset;

@@ -22,7 +22,7 @@ header nav {
   top: 0; }
   header nav .logo {
     position: absolute;
-    width: 100px;
+    width: 75px;
     height: 25px;
     margin: 20px 0px 0px 20px; }
   header nav .navbar {
@@ -67,6 +67,7 @@ header nav {
         header nav .navbar ul .features-menu:hover .features-submenu {
           display: flex; }
         header nav .navbar ul .features-menu .features-submenu {
+          color: dimgray;
           position: absolute;
           top: 55px;
           right: 0px;
@@ -90,6 +91,7 @@ header nav {
         header nav .navbar ul .company-menu:hover .company-submenu {
           display: flex; }
         header nav .navbar ul .company-menu .company-submenu {
+          color: dimgray;
           position: absolute;
           top: 55px;
           left: 30px;
@@ -97,6 +99,7 @@ header nav {
           flex-direction: column;
           height: 140px;
           width: 130px;
+          padding-left: 0px;
           line-height: 35px;
           background-color: white;
           border-radius: 8px;
@@ -121,7 +124,7 @@ section {
   justify-items: end; }
   section .left {
     grid-area: left;
-    margin-left: 70px; }
+    margin-left: 125px; }
     section .left h1 {
       font-size: 8rem;
       font-weight: 700;
@@ -174,8 +177,6 @@ section {
     display: none; } }
 
 @media screen and (max-width: 740px) {
-  header nav .logo {
-    width: 75px; }
   header nav .navbar {
     display: none;
     background-color: #fafafa;
@@ -205,10 +206,12 @@ section {
     header nav .navbar ul li .register {
       padding: 10px 60px 10px 60px; }
     header nav .navbar ul .features-menu .features-submenu {
+      background-color: #fafafa;
       left: 25px;
       border-radius: unset;
       box-shadow: unset; }
     header nav .navbar ul .company-menu .company-submenu {
+      background-color: #fafafa;
       left: 30px;
       border-radius: unset;
       box-shadow: unset; }
