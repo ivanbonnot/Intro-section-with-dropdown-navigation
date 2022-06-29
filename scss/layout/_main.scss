@@ -1,6 +1,6 @@
 
 section {
-    padding: 100px;
+    padding: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
@@ -10,7 +10,7 @@ section {
 
     .left {
         grid-area: left;
-        margin-left: 40px;
+        margin-left: 70px;
 
         h1 {
             font-size: 8rem;
